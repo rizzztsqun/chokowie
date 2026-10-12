@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Aqbil Rizqullah</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            background: linear-gradient(135deg, #1e293b, #334155);
+            padding: 30px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            margin-bottom: 25px;
+        }
+
+        .hero img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .hero .class-info {
+            color: #38bdf8;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .hero .tagline {
+            display: inline-block;
+            background-color: rgba(56, 189, 248, 0.1);
+            color: #38bdf8;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 14px;
+        }
+
+        .card {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #334155;
+        }
+
+        .card h2 {
+            font-size: 18px;
+            color: #38bdf8;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 8px;
+        }
+
+        .biodata-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .biodata-table td {
+            padding: 8px 0;
+            vertical-align: top;
+        }
+
+        .biodata-table td:first-child {
+            font-weight: bold;
+            color: #94a3b8;
+            width: 35%;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .skill-item {
+            background-color: #0f172a;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #334155;
+            font-size: 14px;
+            font-weight: 600;
+            color: #e2e8f0;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-btn {
+            display: block;
+            text-align: center;
+            background-color: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .contact-btn.alt {
+            background-color: #334155;
+            color: #ffffff;
+        }
+
+        .js-btn {
+            width: 100%;
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            border: none;
+            color: #0f172a;
+            padding: 12px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="hero">
+            <img src="cho kowie.jpg" alt="Foto Aqbil Rizqullah">
+            <h1>Aqbil Rizqullah</h1>
+            <p class="class-info">Kelas XI RPL</p>
+            <span class="tagline">Editor</span>
+        </div>
+
+        <div class="card">
+            <h2>Tentang Saya</h2>
+            <p>Hai, perkenalkan nama gw Aqbil Rizqullah bisa di panggil Aqbil. Gw pelajar dari SMK Al-Madani Pontianak, Jurusan Rekayasa Perangkat Lunak. Gw punya banyak hobi, salah satunya workout dan ngedit video. Gw anak pertama dari dua bersaudara. Udah sih itu aja, i am just a Jester</p>
+        </div>
+
+        <!-- Biodata -->
+        <div class="card">
+            <h2>Biodata Diri</h2>
+            <table class="biodata-table">
+                <tr>
+                    <td>TTL</td>
+                    <td>: Singkawang, 7 Agustus 2009</td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>: Pontianak Barat, Kalimantan Barat</td>
+                </tr>
+                <tr>
+                    <td>Email Sekolah</td>
+                    <td>: exfr4nzz@gmail.com</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>Keahlian & Hobi</h2>
+            <div class="skills-grid">
+                <div class="skill-item">workout</div>
+                <div class="skill-item">Edit konten</div>
+                <div class="skill-item">Desain Canva</div>
+                <div class="skill-item">Gaming & Coding</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Kontak & Media Sosial</h2>
+            <div class="contact-links">
+                <a href="https://instagram.com" target="_blank" class="contact-btn">instagram: @rizzztsqun</a>
+                <a href="mailto:exfr4nzz@gmail.com" class="contact-btn alt">kirim email</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Sapa Pengunjung</h2>
+            <button class="js-btn" onclick="sapaUser()">klik untuk Menyapa</button>
+        </div>
+
+    </div>
+    
+    <script>
+        function sapaUser() {
+            alert("makasih sudah mengunjungi website portfolio gw");
+        }
+    </script>
+
+</body>
+</html>
